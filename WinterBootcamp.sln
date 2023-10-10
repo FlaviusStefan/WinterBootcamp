@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinterBootcamp", "WinterBootcamp\WinterBootcamp.csproj", "{62995A6C-4E49-4CDA-8A2E-87B23D1183CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62995A6C-4E49-4CDA-8A2E-87B23D1183CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62995A6C-4E49-4CDA-8A2E-87B23D1183CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62995A6C-4E49-4CDA-8A2E-87B23D1183CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62995A6C-4E49-4CDA-8A2E-87B23D1183CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23DE625C-0CB8-4FC8-91F6-A83973F65332}
+	EndGlobalSection
+EndGlobal
