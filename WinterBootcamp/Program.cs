@@ -18,6 +18,7 @@ builder.Services.AddSwaggerGen();
 
 //Configure Repositories
 builder.Services.AddSingleton<IApplicantRepository, ApplicantRepositoryList>();
+builder.Services.AddSingleton<IEmployerRepository, EmployerRepository>();
 
 var app = builder.Build();
 

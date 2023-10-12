@@ -17,7 +17,6 @@ namespace WinterBootcamp.Controllers
         }
 
         [HttpPost]
-        [Route("applicant")]
         public async Task<IActionResult> AddApplicant([FromBody] Applicant applicant)
         {
             var isSuccessful = await _applicantRepository.AddApplicant(applicant);
@@ -25,23 +24,19 @@ namespace WinterBootcamp.Controllers
         }
 
         [HttpGet]
-        [Route("employer/applicants/{employerId}")]
-        public async Task<IActionResult> GetAllApplicantsForEmployer(string employerId)
+        [Route("employer/{employerId}")]
+        public async Task<IActionResult> GetAllApplicantsForEmployer(Guid employerId)
         {
-
-            if (!Guid.TryParse(employerId, out var id))
-                return BadRequest("invalid guid");
-
-            var result = await _applicantRepository.GetAllApplicantsForEmployer(id);
+            var result = await _applicantRepository.GetAllApplicantsForEmployer(employerId);
             return Ok(result);
         }
+
         [HttpGet]
-        [Route("joblisting/applicants")]
-        public async Task<IActionResult> GetAllApplicantsForJobListing()
-        {
-            throw new NotImplementedException();
+        [Route("joblisting/{joblistingId}")]
+        public async Task<IActionResult> GetAllApplicantsForJobListing(Guid jobListingId)
+        {          
+            var result = await _applicantRepository.GetAllApplicantsForEmployer(jobListingId);
+            return Ok(result);
         }
-
-
     }
 }

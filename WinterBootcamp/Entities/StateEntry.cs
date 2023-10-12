@@ -6,4 +6,10 @@
         public string StateName { get; set; }
         public Guid CountryId { get; set; }
     }
+
+    public class StateDto
+    {
+        public string StateName { get; set; }
+        public Guid CountryId { get; set; }
+    }
 }

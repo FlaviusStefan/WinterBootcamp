@@ -33,9 +33,4 @@ namespace WinterBootcamp.Repository
         }
     }
 
-    // Baza de Date
-    //public class ApplicantRepositoryDataStore : IApplicantRepository
-    //{
-
-    //}
 }
